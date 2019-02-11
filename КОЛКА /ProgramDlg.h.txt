@@ -1,0 +1,56 @@
+// ProgramDlg.h: заголовочный файл
+//
+
+#pragma один раз
+
+#define mtime 298
+#define PI 3.1415926535897932384626433832795
+
+
+// диалог CProgramDlg
+класс CProgramDlg: общедоступный CDialog
+{
+	// Строительство
+общественности:
+	CProgramDlg (CWnd * pParent = nullptr); // стандартный конструктор
+
+	// Данные диалога
+#ifdef AFX_DESIGN_TIME
+	enum {IDD = IDD_PROGRAM_DIALOG};
+#endif
+
+защищенный:
+	виртуальная пустота DoDataExchange (CDataExchange * pDX); // DDX / DDV поддержка
+
+
+	// Реализация
+защищенный:
+	HICON m_hIcon;
+
+	// Сгенерированные функции карты сообщений
+	виртуальная BOOL OnInitDialog ();
+	afx_msg void OnPaint ();
+	afx_msg HCURSOR OnQueryDragIcon ();
+
+частный:
+
+	COLORREF ср, с [25];
+	HFONT держать, hNew, hbk;
+	HPEN hPenOxy, HOLDENPEN, ручка;
+	HBRUSH m, oldm, щетка;
+	CPen d, oldd;
+	CBitmap pic;
+	CRect rc, w, kw [30];
+
+	CString ms, t, z;
+
+	int Matrix [50] [50];
+	int x1, y1, x2, y2, x3, y3, x4, y4;
+	int RH, RW, k, i, j, p, x, y, cx, cy, dx, dy;
+	bool fg;
+
+
+
+
+	DECLARE_MESSAGE_MAP ()
+};
